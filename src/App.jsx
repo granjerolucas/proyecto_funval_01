@@ -1,8 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import ListaSearch from "./pages/task/ListaSearch";
+import Search from "./pages/task/Search";
 
 export default function App() {
   return (
     <>
+
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
         <Route path="/todos" element={<h1>Todos</h1>} />
