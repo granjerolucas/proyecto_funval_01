@@ -2,17 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* Outras rotas serão adicionadas aqui posteriormente */}
-        </Routes>
-      </Layout>
-    </Router>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/todos" element={<h1>Todos</h1>} />
+        <Route path="/posts" element={<h1>Posts</h1>} />
+        <Route path="/albums" element={<h1>Albums</h1>} />
+      </Routes>
+    </>
   );
 }
-
-export default App;
