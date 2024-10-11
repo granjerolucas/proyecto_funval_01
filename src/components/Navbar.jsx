@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Ilustracao3dPessoa from '../Img/Ilustracao-3d-pessoa.jpg'
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
@@ -7,7 +7,7 @@ const Navbar = () => {
         <span className="text-xl font-semibold text-gray-800">Main App</span>
         <div className="flex items-center">
           <img
-            src="./components/Ilustracao-3d-pessoa.jpg"
+            src={Ilustracao3dPessoa}
             alt="User avatar"
             className="w-10 h-10 rounded-full object-cover"
           />
