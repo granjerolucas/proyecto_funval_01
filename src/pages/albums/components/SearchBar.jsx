@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function SearchBar() {
-  return (
+ 
+  async function fetchData(url) {
+    const rs = await fetch(url);
+    const json = await rs.json();
+    return json;
+  } 
+  
+    useEffect(() => {
+      
+        fetchData(`https://jsonplaceholder.typicode.com/albums`)
+          .then((data) => console.log(data))
+      
+    }, [])
+  
+  
+ 
+    return (
     <form className="max-w-md mx-auto mt-4">
   <label
     htmlFor="default-search"
