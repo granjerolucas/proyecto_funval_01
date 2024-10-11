@@ -1,11 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import ListaSearch from "./pages/task/ListaSearch";
-import Search from "./pages/task/Search";
+import PageTask from "./pages/task/PageTask";
 
 export default function App() {
   return (
     <>
-
+    < PageTask/>
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
         <Route path="/todos" element={<h1>Todos</h1>} />
@@ -13,5 +12,6 @@ export default function App() {
         <Route path="/albums" element={<h1>Albums</h1>} />
       </Routes>
     </>
+    
   );
 }
