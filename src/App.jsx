@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import SearchBar from './coponents/SearchBar'
+import SearchBar from './pages/albums/components/SearchBar'
 
 
 export default function App() {
@@ -19,12 +19,11 @@ export default function App() {
         <Route path='/albums' element={
           <>
             <div className='container  h-screen overflow-hidden'>
-
-              <SearchBar />
-
+              <SearchBar 
+              />
             </div>
-
-          </>} />
+          </>}
+           />
       </Routes>
     </>
   )
