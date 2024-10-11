@@ -20,7 +20,7 @@ export default function Search({todos,setTodos}) {
 
   return (
     <>
-    <div className="w-screen h-1/6 mt-10 mb-10 flex items-center justify-center ">
+    <div className="w-full h-1/6 mt-10 mb-10 flex items-center justify-center ">
         <div className="w-3/6 flex items-center justify-between">
             <button id="todos" className="btn btn-primary w-[20%]" onClick={()=>setFilterOption('todos')}>Todos</button>
             <button id="completados" className="btn btn-success w-[20%]" onClick={()=>setFilterOption('completados')}>Completados</button>
